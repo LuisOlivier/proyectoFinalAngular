@@ -1,0 +1,35 @@
+<div class="container" *ngFor="let item of paises; index as i">
+  <h1>{{item.name}}</h1>
+  <div class="row align-items-start">
+    <div class="col-4">
+      <table class="table">
+        <thead>
+          <td><h1>Bandera</h1></td>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src={{item.bandera}} width="100px"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-4">
+      <table class="table">
+        <thead>
+          <td><h1>Información</h1></td>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a>Capital: {{item.capital}}</a></td>
+          </tr>
+          <tr>
+            <td><a>Población: {{item.poblacion}}</a></td>
+          </tr>
+          <tr>
+            <td><a>Código: {{item.icon}}</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
